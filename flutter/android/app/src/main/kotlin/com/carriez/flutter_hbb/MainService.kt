@@ -48,7 +48,7 @@ const val INIT_SERVICE = "init_service"
 const val ACTION_LOGIN_REQ_NOTIFY = "ACTION_LOGIN_REQ_NOTIFY"
 const val EXTRA_LOGIN_REQ_NOTIFY = "EXTRA_LOGIN_REQ_NOTIFY"
 
-const val DEFAULT_NOTIFY_TITLE = "RustDesk"
+const val DEFAULT_NOTIFY_TITLE = "Remotely"
 const val DEFAULT_NOTIFY_TEXT = "Service is running"
 const val DEFAULT_NOTIFY_ID = 1
 const val NOTIFY_ID_OFFSET = 100
