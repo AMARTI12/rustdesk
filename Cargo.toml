@@ -1,7 +1,7 @@
 [package]
-name = "rustdesk"
+name = "remotely"
 version = "1.2.0"
-authors = ["rustdesk <info@rustdesk.com>"]
+authors = ["remotely <fredy.martinez@excellentiam.co>"]
 edition = "2021"
 build= "build.rs"
 description = "A remote control software."
@@ -131,9 +131,9 @@ flutter_rust_bridge = { git = "https://github.com/SoLongAndThanksForAllThePizza/
 members = ["libs/scrap", "libs/hbb_common", "libs/enigo", "libs/clipboard", "libs/virtual_display", "libs/virtual_display/dylib", "libs/simple_rc", "libs/portable"]
 
 [package.metadata.winres]
-LegalCopyright = "Copyright © 2022 Purslane, Inc."
+LegalCopyright = "Copyright © 2022 Excellentiam SE."
 # this FileDescription overrides package.description
-FileDescription = "RustDesk"
+FileDescription = "Remotely"
 
 [target.'cfg(target_os="windows")'.build-dependencies]
 winres = "0.1"

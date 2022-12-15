@@ -1095,7 +1095,7 @@ class _AboutState extends State<_About> {
           child: SingleChildScrollView(
             controller: scrollController,
             physics: NeverScrollableScrollPhysics(),
-            child: _Card(title: 'About RustDesk', children: [
+            child: _Card(title: 'About Remotely', children: [
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -1106,7 +1106,7 @@ class _AboutState extends State<_About> {
                   Text('Build Date: $buildDate').marginSymmetric(vertical: 4.0),
                   InkWell(
                       onTap: () {
-                        launchUrlString('https://rustdesk.com/privacy');
+                        launchUrlString('https://excellentiam.co/');
                       },
                       child: const Text(
                         'Privacy Statement',
@@ -1114,7 +1114,7 @@ class _AboutState extends State<_About> {
                       ).marginSymmetric(vertical: 4.0)),
                   InkWell(
                       onTap: () {
-                        launchUrlString('https://rustdesk.com');
+                        launchUrlString('https://excellentiam.co/');
                       },
                       child: const Text(
                         'Website',
@@ -1131,11 +1131,11 @@ class _AboutState extends State<_About> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                'Copyright © 2022 Purslane Ltd.\n$license',
+                                'Copyright © 2022 Excellentiam SE.\n$license',
                                 style: const TextStyle(color: Colors.white),
                               ),
                               const Text(
-                                'Made with heart in this chaotic world!',
+                                'F.A.M.M',
                                 style: TextStyle(
                                     fontWeight: FontWeight.w800,
                                     color: Colors.white),
