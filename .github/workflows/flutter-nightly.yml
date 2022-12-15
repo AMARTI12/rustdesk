@@ -530,13 +530,13 @@ jobs:
      #     path: ${{steps.sign-rustdesk.outputs.signedReleaseFile}}
           path: ./
 
-      - name: Publish apk package
-        uses: softprops/action-gh-release@v1
-        with:
-          prerelease: true
-          tag_name: ${{ env.TAG_NAME }}
-          files: | ./
-      #      ${{steps.sign-rustdesk.outputs.signedReleaseFile}}
+     # - name: Publish apk package
+     #   uses: softprops/action-gh-release@v1
+     #   with:
+     #     prerelease: true
+     #     tag_name: ${{ env.TAG_NAME }}
+     #     files: | 
+     #      ${{steps.sign-rustdesk.outputs.signedReleaseFile}}
 
   build-rustdesk-lib-linux-amd64:
     needs: [generate-bridge-linux, build-vcpkg-deps-linux]
