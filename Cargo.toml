@@ -5,7 +5,7 @@ authors = ["remotely <fredy.martinez@excellentiam.co>"]
 edition = "2021"
 build= "build.rs"
 description = "A remote control software."
-default-run = "rustdesk"
+default-run = "remotely"
 
 [lib]
 name = "librustdesk"
@@ -133,7 +133,7 @@ members = ["libs/scrap", "libs/hbb_common", "libs/enigo", "libs/clipboard", "lib
 [package.metadata.winres]
 LegalCopyright = "Copyright © 2022 Excellentiam SE."
 # this FileDescription overrides package.description
-FileDescription = "RustDesk"
+FileDescription = "Remotely"
 
 [target.'cfg(target_os="windows")'.build-dependencies]
 winres = "0.1"
