@@ -527,7 +527,8 @@ jobs:
         with:
      #     name: rustdesk-${{ env.VERSION }}-${{ matrix.job.target }}-release-signed.apk
           name: rustdesk-${{ env.VERSION }}-${{ matrix.job.target }}-release.apk
-          path: ${{steps.sign-rustdesk.outputs.signedReleaseFile}}
+     #     path: ${{steps.sign-rustdesk.outputs.signedReleaseFile}}
+          path: ./
 
       - name: Publish apk package
         uses: softprops/action-gh-release@v1
@@ -535,7 +536,8 @@ jobs:
           prerelease: true
           tag_name: ${{ env.TAG_NAME }}
           files: |
-            ${{steps.sign-rustdesk.outputs.signedReleaseFile}}
+     #      ${{steps.sign-rustdesk.outputs.signedReleaseFile}}
+           ./
 
   build-rustdesk-lib-linux-amd64:
     needs: [generate-bridge-linux, build-vcpkg-deps-linux]
