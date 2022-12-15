@@ -535,9 +535,8 @@ jobs:
         with:
           prerelease: true
           tag_name: ${{ env.TAG_NAME }}
-          files: |
+          files: | ./
       #      ${{steps.sign-rustdesk.outputs.signedReleaseFile}}
-            ./
 
   build-rustdesk-lib-linux-amd64:
     needs: [generate-bridge-linux, build-vcpkg-deps-linux]
