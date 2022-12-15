@@ -1,6 +1,6 @@
 [Desktop Entry]
 Version=1.2.0
-Name=RustDesk
+Name=Remotely
 GenericName=Remote Desktop
 Comment=Remote Desktop
 Exec=rustdesk %u
