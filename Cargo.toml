@@ -133,7 +133,7 @@ members = ["libs/scrap", "libs/hbb_common", "libs/enigo", "libs/clipboard", "lib
 [package.metadata.winres]
 LegalCopyright = "Copyright © 2022 Excellentiam SE."
 # this FileDescription overrides package.description
-FileDescription = "Remotely"
+FileDescription = "RustDesk"
 
 [target.'cfg(target_os="windows")'.build-dependencies]
 winres = "0.1"
