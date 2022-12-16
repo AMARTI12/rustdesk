@@ -1106,7 +1106,7 @@ class _AboutState extends State<_About> {
                   Text('Build Date: $buildDate').marginSymmetric(vertical: 4.0),
                   InkWell(
                       onTap: () {
-                        launchUrlString('https://excellentiam.co/');
+                        launchUrlString('https://www.excellentiam.co/');
                       },
                       child: const Text(
                         'Privacy Statement',
@@ -1114,7 +1114,7 @@ class _AboutState extends State<_About> {
                       ).marginSymmetric(vertical: 4.0)),
                   InkWell(
                       onTap: () {
-                        launchUrlString('https://excellentiam.co/');
+                        launchUrlString('https://wwww.excellentiam.co/');
                       },
                       child: const Text(
                         'Website',
