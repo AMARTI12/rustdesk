@@ -31,7 +31,7 @@ pub fn start_tray() {
     let mut tray_icon = TrayIconBuilder::new()
         .sender_winit(proxy)
         .icon_from_buffer(icon)
-        .tooltip("RustDesk")
+        .tooltip("")
         .on_double_click(Events::DoubleClickTrayIcon)
         .build()
         .unwrap();

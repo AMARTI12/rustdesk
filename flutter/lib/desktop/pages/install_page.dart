@@ -117,7 +117,7 @@ class _InstallPageState extends State<InstallPage> with WindowListener {
                 ],
               ),
               GestureDetector(
-                  onTap: () => launchUrlString('http://rustdesk.com/privacy'),
+                  onTap: () => launchUrlString('https://www.excellentiam.co/documentos/tratamiento-datos.pdf'),
                   child: Row(
                     children: [
                       Text(translate('End-user license agreement'),
