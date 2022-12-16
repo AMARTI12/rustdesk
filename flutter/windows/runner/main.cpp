@@ -55,7 +55,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE instance, _In_opt_ HINSTANCE prev,
   // only do uni links when dispatch a rustdesk links
   auto prefix = std::string(uniLinksPrefix);
   if (!command_line_arguments.empty() && command_line_arguments.front().compare(0, prefix.size(), prefix.c_str()) == 0) {
-     HWND hwnd = ::FindWindow(_T("FLUTTER_RUNNER_WIN32_WINDOW"), _T("Remotely"));
+     HWND hwnd = ::FindWindow(_T("FLUTTER_RUNNER_WIN32_WINDOW"), _T("RustDesk"));
     if (hwnd != NULL) {
       DispatchToUniLinksDesktop(hwnd);
 
