@@ -166,7 +166,7 @@ fn get_default_app_indicator() -> Option<AppIndicator> {
     let icon = include_bytes!("../res/icon.png");
     // appindicator does not support icon buffer, so we write it to tmp folder
     let mut icon_path = temp_dir();
-    icon_path.push("RustDesk");
+    icon_path.push("Remotely");
     icon_path.push("rustdesk.png");
     match std::fs::File::create(icon_path.clone()) {
         Ok(mut f) => {
@@ -185,8 +185,8 @@ fn get_default_app_indicator() -> Option<AppIndicator> {
         }
     }
     debug!("write temp icon complete");
-    let mut appindicator = AppIndicator::new("RustDesk", icon_path.to_str().unwrap_or("rustdesk"));
-    appindicator.set_label("RustDesk", "A remote control software.");
+    let mut appindicator = AppIndicator::new("Remotely", icon_path.to_str().unwrap_or("rustdesk"));
+    appindicator.set_label("Remotely", "A remote control software.");
     appindicator.set_status(AppIndicatorStatus::Active);
     Some(appindicator)
 }

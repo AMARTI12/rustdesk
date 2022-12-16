@@ -88,7 +88,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE instance, _In_opt_ HINSTANCE prev,
   FlutterWindow window(project);
   Win32Window::Point origin(10, 10);
   Win32Window::Size size(800, 600);
-  if (!window.CreateAndShow(L"RustDesk", origin, size, showOnTaskBar))
+  if (!window.CreateAndShow(L"Remotely", origin, size, showOnTaskBar))
   {
     return EXIT_FAILURE;
   }
