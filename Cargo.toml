@@ -1,11 +1,11 @@
 [package]
-name = "rustdesk"
+name = "Remotely"
 version = "1.2.0"
 authors = ["Fredy Alexander <fredy.martinez@excellentiam.co>"]
 edition = "2021"
 build= "build.rs"
 description = "A remote control software."
-default-run = "rustdesk"
+default-run = "Remotely"
 
 [lib]
 name = "librustdesk"
