@@ -1106,22 +1106,22 @@ class _AboutState extends State<_About> {
                   const SizedBox(
                     height: 8.0,
                   ),
-                  Text('Version: $version').marginSymmetric(vertical: 4.0),
-                  Text('Build Date: $buildDate').marginSymmetric(vertical: 4.0),
+                  Text(translate('Version') + ': $version').marginSymmetric(vertical: 4.0),
+                  Text(translate('Build Date') + ': $buildDate').marginSymmetric(vertical: 4.0),
                   InkWell(
                       onTap: () {
                         launchUrlString('https://www.excellentiam.co/');
                       },
-                      child: const Text(
-                        'Privacy Statement',
+                      child: Text(
+                        translate('Privacy Statement'),
                         style: linkStyle,
                       ).marginSymmetric(vertical: 4.0)),
                   InkWell(
                       onTap: () {
                         launchUrlString('https://wwww.excellentiam.co/');
                       },
-                      child: const Text(
-                        'Website',
+                      child: Text(
+                        translate('Website'),
                         style: linkStyle,
                       ).marginSymmetric(vertical: 4.0)),
                   Container(
